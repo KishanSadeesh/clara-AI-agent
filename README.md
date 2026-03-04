@@ -410,9 +410,3 @@ python scripts/s4_batch_run.py
 | Zero cost | Groq free tier + all free tools |
 
 ---
-
-## 👤 Submission
-
-**GitHub:** https://github.com/KishanSadeesh/clara-ai.git
-**Loom:** [Add your Loom link]
-**Trello:** https://trello.com/b/EM7q87T4/clara-pipeline-account-tracker
