@@ -5,7 +5,7 @@
 
 ## 🎥 Demo
 - **Loom Video:** [Add your Loom link here]
-- **Dashboard:** [(https://github.com/KishanSadeesh/clara-ai.git)]
+- **GITHUB** [(https://github.com/KishanSadeesh/clara-ai.git)]
 - **Trello Board:** https://trello.com/b/EM7q87T4/clara-pipeline-account-tracker
 
 ---
