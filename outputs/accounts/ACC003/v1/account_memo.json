@@ -9,7 +9,8 @@
   },
   "office_address": "Houston, Texas",
   "services_supported": [
-    "sprinkler system installation and maintenance",
+    "sprinkler system installation",
+    "sprinkler system maintenance",
     "fire alarm installation",
     "kitchen hood suppression systems",
     "annual fire safety inspections"
@@ -18,7 +19,8 @@
     "Active sprinkler head discharge",
     "Fire alarm system going off and not resetting",
     "Kitchen hood suppression system discharge",
-    "Active water damage from our systems or active fire risk"
+    "Active water damage from our systems",
+    "Active fire risk"
   ],
   "emergency_routing_rules": {
     "primary_contact": null,
@@ -44,13 +46,13 @@
   "after_hours_flow_summary": null,
   "office_hours_flow_summary": null,
   "questions_or_unknowns": [
-    "Transfer retry logic not specified in demo.",
+    "details on job management software integration with ServiceTrade",
+    "Transfer timeout not specified in demo.",
     "how to handle calls that go to voicemail during business hours",
-    "details on technician on-call rotation",
-    "Transfer timeout not specified in demo."
+    "Transfer retry logic not specified in demo."
   ],
   "notes": "hospitals are top priority clients, treat them differently",
   "version": "v1",
   "source": "demo_call",
-  "generated_at": "2026-03-04T16:00:02.072650Z"
+  "generated_at": "2026-03-04T19:02:05.914295Z"
 }

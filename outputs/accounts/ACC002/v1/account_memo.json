@@ -41,20 +41,18 @@
   "after_hours_flow_summary": null,
   "office_hours_flow_summary": null,
   "questions_or_unknowns": [
-    "Emergency definition",
-    "Business hours",
-    "Office address",
-    "Call transfer rules",
-    "After hours flow",
     "Transfer timeout not specified in demo.",
-    "Emergency escalation order not specified.",
-    "Non-emergency routing rules",
-    "Office hours flow",
+    "Business hours",
     "Transfer retry logic not specified in demo.",
-    "Missing critical field 'emergency_definition' \u2013 confirm during onboarding."
+    "Missing critical field 'emergency_definition' \u2013 confirm during onboarding.",
+    "Non-emergency routing rules",
+    "Emergency escalation order not specified.",
+    "Office address",
+    "Emergency routing rules",
+    "Call transfer rules"
   ],
   "notes": null,
   "version": "v1",
   "source": "demo_call",
-  "generated_at": "2026-03-04T15:59:59.945214Z"
+  "generated_at": "2026-03-04T19:01:58.886638Z"
 }

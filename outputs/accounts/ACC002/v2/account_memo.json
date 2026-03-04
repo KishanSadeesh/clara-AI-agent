@@ -20,7 +20,7 @@
     "Tenant improvements"
   ],
   "emergency_definition": [
-    "specific property manager (G&M Pressure Washing)"
+    "calls related to properties managed by G&M Pressure Washing"
   ],
   "emergency_routing_rules": {
     "primary_contact": "Ben",
@@ -31,7 +31,7 @@
     "fallback": null
   },
   "non_emergency_routing_rules": {
-    "destination": "follow up next business day",
+    "destination": "follow up the next business day",
     "method": "inform caller"
   },
   "call_transfer_rules": {
@@ -45,21 +45,19 @@
   "after_hours_flow_summary": "Clara will inform callers that someone will follow up the next business day, except for emergency calls from G&M Pressure Washing which will be transferred to Ben",
   "office_hours_flow_summary": "Clara will answer calls and can transfer to Ben if needed",
   "questions_or_unknowns": [
-    "Emergency definition",
-    "Business hours",
-    "Office address",
-    "Call transfer rules",
-    "After hours flow",
     "Transfer timeout not specified in demo.",
-    "Emergency escalation order not specified.",
-    "Non-emergency routing rules",
-    "Office hours flow",
+    "Business hours",
     "Transfer retry logic not specified in demo.",
-    "Missing critical field 'emergency_definition' \u2013 confirm during onboarding."
+    "Missing critical field 'emergency_definition' \u2013 confirm during onboarding.",
+    "Non-emergency routing rules",
+    "Emergency escalation order not specified.",
+    "Office address",
+    "Emergency routing rules",
+    "Call transfer rules"
   ],
-  "notes": "Ben has a second phone number for personal calls that will be used for call transfers once activated, service call fee is $115 and hourly rate is $98 per hour ($49 per half hour)",
+  "notes": "Ben has a second phone number that will be used for personal calls once activated, Clara can be turned on and off as needed",
   "version": "v2",
   "source": "onboarding_call",
-  "generated_at": "2026-03-04T15:59:59.945214Z",
-  "updated_at": "2026-03-04T16:00:10.744220Z"
+  "generated_at": "2026-03-04T19:01:58.886638Z",
+  "updated_at": "2026-03-04T19:02:33.818081Z"
 }

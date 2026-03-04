@@ -26,16 +26,16 @@
   ],
   "emergency_routing_rules": {
     "primary_contact": "615-555-0133",
-    "contact_number": "615-555-0133",
+    "contact_number": "615-555-0144",
     "order": [
       "615-555-0133",
       "615-555-0144",
       "615-555-0166"
     ],
-    "fallback": null
+    "fallback": "operations manager at 615-555-0155"
   },
   "non_emergency_routing_rules": {
-    "destination": "guardianhvac.com/portal",
+    "destination": "service coordinator",
     "method": "next business day"
   },
   "call_transfer_rules": {
@@ -49,11 +49,11 @@
   "after_hours_flow_summary": null,
   "office_hours_flow_summary": null,
   "questions_or_unknowns": [
-    "ask callers if they are currently on a maintenance contract when preventive maintenance program launches"
+    "add question about maintenance contract when preventive maintenance program launches"
   ],
-  "notes": "VIP accounts: Vanderbilt University Medical Center, Saint Thomas Hospital, Marriott properties, Nashville Predators or Tennessee Titans facility, government building or federal facility. Special date range exception: week between Christmas and New Year treated as after hours.",
+  "notes": "VIP accounts: Vanderbilt University Medical Center, Saint Thomas Hospital, Marriott properties, Nashville Predators or Tennessee Titans facility, government building or federal facility. Client portal: guardianhvac.com/portal. Email service at guardianhvac dot com for emergency service history or invoices.",
   "version": "v2",
   "source": "onboarding_call",
-  "generated_at": "2026-03-04T16:00:07.439052Z",
-  "updated_at": "2026-03-04T16:00:16.011598Z"
+  "generated_at": "2026-03-04T19:02:20.609284Z",
+  "updated_at": "2026-03-04T19:02:54.122666Z"
 }

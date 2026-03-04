@@ -36,15 +36,17 @@
   "integration_constraints": [
     "do not auto-create sprinkler jobs in ServiceTrade"
   ],
-  "after_hours_flow_summary": null,
+  "after_hours_flow_summary": "route emergencies to on-call technician, take messages for non-emergencies",
   "office_hours_flow_summary": null,
   "questions_or_unknowns": [
-    "Emergency escalation order not specified.",
+    "Transfer timeout not specified in demo.",
     "Transfer retry logic not specified in demo.",
-    "Transfer timeout not specified in demo."
+    "Emergency escalation order not specified.",
+    "what happens if on-call technician is unreachable",
+    "how to handle calls during business hours"
   ],
   "notes": null,
   "version": "v1",
   "source": "demo_call",
-  "generated_at": "2026-03-04T15:59:57.922888Z"
+  "generated_at": "2026-03-04T19:01:51.939717Z"
 }

@@ -10,8 +10,8 @@
       "Friday",
       "Saturday"
     ],
-    "start": "7:00 AM",
-    "end": "6:00 PM",
+    "start": "7:00am",
+    "end": "6:00pm",
     "timezone": "America/Chicago"
   },
   "office_address": "Houston, Texas",
@@ -48,14 +48,14 @@
   "after_hours_flow_summary": "collect info and call back Monday",
   "office_hours_flow_summary": "transfer calls",
   "questions_or_unknowns": [
-    "Transfer retry logic not specified in demo.",
+    "details on job management software integration with ServiceTrade",
+    "Transfer timeout not specified in demo.",
     "how to handle calls that go to voicemail during business hours",
-    "details on technician on-call rotation",
-    "Transfer timeout not specified in demo."
+    "Transfer retry logic not specified in demo."
   ],
-  "notes": "never put callers on hold, VIP routing rule for Memorial Hermann Hospital system",
+  "notes": "never put callers on hold, VIP routing rule for Memorial Hermann Hospital system, page 713-555-0300",
   "version": "v2",
   "source": "onboarding_call",
-  "generated_at": "2026-03-04T16:00:02.072650Z",
-  "updated_at": "2026-03-04T16:00:12.721442Z"
+  "generated_at": "2026-03-04T19:02:05.914295Z",
+  "updated_at": "2026-03-04T19:02:40.735611Z"
 }

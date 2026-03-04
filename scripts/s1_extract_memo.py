@@ -1,4 +1,4 @@
-import json
+import json,time
 from dotenv import load_dotenv
 import os
 import re
@@ -65,32 +65,47 @@ Transcript:
 """
 
 def call_groq(transcript: str) -> dict:
-    headers = {
-        "Authorization": f"Bearer {GROQ_API_KEY}",
-        "Content-Type": "application/json"
-    }
+    """Send transcript to Groq with retry logic for rate limits."""
+    max_retries = 5
+    wait_seconds = 15  # wait 15 seconds between retries
 
-    payload = {
-        "model": GROQ_MODEL,
-        "messages": [
-            {"role": "user", "content": EXTRACTION_PROMPT.replace("{transcript}", transcript)}
-        ],
-        "temperature": 0.0
-    }
+    for attempt in range(max_retries):
+        time.sleep(5)  # always wait 5 seconds before every call
+        try:
+            response = requests.post(
+                "https://api.groq.com/openai/v1/chat/completions",
+                headers={
+                    "Authorization": f"Bearer {GROQ_API_KEY}",
+                    "Content-Type": "application/json"
+                },
+                json={
+                    "model": GROQ_MODEL,
+                    "messages": [{"role": "user", "content": EXTRACTION_PROMPT.replace("{transcript}", transcript)}],
+                    "temperature": 0.0,
+                    "max_tokens": 2000
+                }
+            )
 
-    response = requests.post(
-        "https://api.groq.com/openai/v1/chat/completions",
-        headers=headers,
-        json=payload
-    )
+            # If rate limited wait and retry
+            if response.status_code == 429:
+                print(f"[Groq] Rate limited. Waiting {wait_seconds}s before retry {attempt+1}/{max_retries}...")
+                time.sleep(wait_seconds)
+                wait_seconds += 10  # increase wait each retry
+                continue
 
-    response.raise_for_status()
+            response.raise_for_status()
+            raw = response.json()["choices"][0]["message"]["content"]
+            clean = re.sub(r"```json|```", "", raw).strip()
+            return json.loads(clean)
 
-    raw = response.json()["choices"][0]["message"]["content"]
-    clean = re.sub(r"```json|```", "", raw).strip()
+        except Exception as e:
+            if attempt < max_retries - 1:
+                print(f"[Groq] Error: {e}. Retrying in {wait_seconds}s...")
+                time.sleep(wait_seconds)
+            else:
+                raise
 
-    return json.loads(clean)
-
+    raise Exception("Groq API failed after maximum retries")
 
 def validate_and_flag(memo: dict, account_id: str) -> dict:
     unknowns = memo.get("questions_or_unknowns", []) or []

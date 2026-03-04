@@ -18,16 +18,16 @@
     "Anything where there is immediate risk of fire, injury, or critical system failure"
   ],
   "emergency_routing_rules": {
-    "primary_contact": "dispatcher",
+    "primary_contact": "Dispatcher",
     "contact_number": "602-555-0187",
     "order": [
-      "dispatcher",
-      "on-call supervisor"
+      "Dispatcher",
+      "On-call supervisor"
     ],
-    "fallback": "collect caller information and send an alert"
+    "fallback": "Collect caller information and send an alert"
   },
   "non_emergency_routing_rules": {
-    "destination": "next business day",
+    "destination": "Next business day",
     "method": null
   },
   "call_transfer_rules": {
@@ -36,17 +36,18 @@
     "fail_message": null
   },
   "integration_constraints": [
-    "no auto-creation of emergency jobs",
-    "no auto-creation of inspection scheduling requests"
+    "No auto-creation of jobs for electrical emergencies",
+    "No creation of inspection scheduling requests in ServiceTrade or FieldEdge"
   ],
-  "after_hours_flow_summary": "transfer to 24 hour emergency line",
+  "after_hours_flow_summary": "Transfer to 24 hour emergency line",
   "office_hours_flow_summary": null,
   "questions_or_unknowns": [
-    "how to handle non-emergency calls during office hours",
-    "Transfer retry logic not specified in demo."
+    "Transfer retry logic not specified in demo.",
+    "How to prioritize non-emergency calls",
+    "How to handle non-emergency calls during office hours"
   ],
-  "notes": "priority emergency for hospital, data center, or airport clients",
+  "notes": "Hospitals, data centers, and airports have SLA agreements and are treated as priority emergencies",
   "version": "v1",
   "source": "demo_call",
-  "generated_at": "2026-03-04T16:00:04.764987Z"
+  "generated_at": "2026-03-04T19:02:13.120496Z"
 }

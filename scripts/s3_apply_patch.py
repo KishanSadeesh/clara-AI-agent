@@ -1,4 +1,4 @@
-import json, os, re, requests
+import json, os, re, requests,time
 from datetime import datetime
 from dotenv import load_dotenv
 
@@ -39,20 +39,47 @@ Transcript:
 
 
 def call_groq(transcript: str) -> dict:
-    response = requests.post(
-        "https://api.groq.com/openai/v1/chat/completions",
-        headers={"Authorization": f"Bearer {GROQ_API_KEY}", "Content-Type": "application/json"},
-        json={
-            "model": GROQ_MODEL,
-            "messages": [{"role": "user", "content": ONBOARDING_PROMPT.replace("{transcript}", transcript)}],
-            "temperature": 0.0,
-            "max_tokens": 2000
-        }
-    )
-    response.raise_for_status()
-    raw = response.json()["choices"][0]["message"]["content"]
-    return json.loads(re.sub(r"```json|```", "", raw).strip())
+    """Send transcript to Groq with retry logic for rate limits."""
+    max_retries = 5
+    wait_seconds = 15
 
+    for attempt in range(max_retries):
+        time.sleep(5)  # always wait 5 seconds before every call
+        try:
+            response = requests.post(
+                "https://api.groq.com/openai/v1/chat/completions",
+                headers={
+                    "Authorization": f"Bearer {GROQ_API_KEY}",
+                    "Content-Type": "application/json"
+                },
+                json={
+                    "model": GROQ_MODEL,
+                    "messages": [{"role": "user", "content": ONBOARDING_PROMPT.replace("{transcript}", transcript)}],
+                    "temperature": 0.0,
+                    "max_tokens": 2000
+                }
+            )
+
+            # If rate limited wait and retry
+            if response.status_code == 429:
+                print(f"[Groq] Rate limited. Waiting {wait_seconds}s before retry {attempt+1}/{max_retries}...")
+                time.sleep(wait_seconds)
+                wait_seconds += 10  # increase wait each retry
+                continue
+
+            response.raise_for_status()
+            raw = response.json()["choices"][0]["message"]["content"]
+            clean = re.sub(r"```json|```", "", raw).strip()
+            return json.loads(clean)
+
+        except Exception as e:
+            if attempt < max_retries - 1:
+                print(f"[Groq] Error: {e}. Retrying in {wait_seconds}s...")
+                time.sleep(wait_seconds)
+            else:
+                raise
+
+    raise Exception("Groq API failed after maximum retries")
 
 def deep_merge(v1: dict, updates: dict, path="") -> tuple[dict, list]:
     """Recursively merge updates into v1. Returns (merged_dict, changelog_entries)."""

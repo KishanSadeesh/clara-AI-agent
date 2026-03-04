@@ -27,7 +27,7 @@
     "fallback": "Collect name, callback number, location, and nature of the issue. Then send a text alert."
   },
   "non_emergency_routing_rules": {
-    "destination": "next business day",
+    "destination": "Next business day",
     "method": null
   },
   "call_transfer_rules": {
@@ -36,16 +36,17 @@
     "fail_message": "Our emergency team has been notified and will contact you within 10 minutes. This is being escalated as a priority emergency."
   },
   "integration_constraints": [
-    "no auto job creation in ServiceTrade or FieldEdge"
+    "No auto-creation of jobs for electrical emergencies",
+    "No creation of inspection scheduling requests in ServiceTrade or FieldEdge"
   ],
-  "after_hours_flow_summary": "transfer to 24 hour emergency line",
+  "after_hours_flow_summary": "Ask if issue is preventing operation, escalate to emergency if yes",
   "office_hours_flow_summary": null,
   "questions_or_unknowns": [
     "Spanish language support"
   ],
-  "notes": "priority emergency for hospital, data center, or airport clients",
+  "notes": "No auto job creation in ServiceTrade or FieldEdge, no daylight saving time changes",
   "version": "v2",
   "source": "onboarding_call",
-  "generated_at": "2026-03-04T16:00:04.764987Z",
-  "updated_at": "2026-03-04T16:00:14.344175Z"
+  "generated_at": "2026-03-04T19:02:13.120496Z",
+  "updated_at": "2026-03-04T19:02:47.297900Z"
 }
