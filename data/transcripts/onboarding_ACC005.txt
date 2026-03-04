@@ -1,0 +1,48 @@
+Clara Onboarding Call - Account ACC005
+Company: Guardian HVAC and Mechanical Services
+
+Rep: Let us finalize your Guardian HVAC configuration. Confirming company name and location - Nashville Tennessee?
+
+Client: Guardian HVAC and Mechanical Services, yes. Nashville Tennessee. America/Chicago timezone.
+
+Rep: Business hours Monday through Friday 7am to 5pm Central. Federal holidays treated as after hours?
+
+Client: Yes. And I want to add - the week between Christmas and New Year we operate on skeleton crew. During that week treat all calls as after hours regardless of time of day.
+
+Rep: Noted as a special date range exception. Primary on-call 615-555-0133, 30 second timeout, then 615-555-0144, then operations manager at 615-555-0155?
+
+Client: Correct. But update the operations manager number. New direct line is 615-555-0166. That is me, David Chen, operations manager.
+
+Rep: Updated to David Chen at 615-555-0166. Transfer fail message?
+
+Client: Say - Our on-call engineering team has been notified. Someone will contact you within 20 minutes. For hospital clients make that 10 minutes.
+
+Rep: So two different fail messages based on caller type?
+
+Client: Exactly. If the caller is from a hospital or medical facility - 10 minutes. Everyone else - 20 minutes.
+
+Rep: Got it. No auto job creation in ServiceTrade, everything goes through service coordinator?
+
+Client: Correct. Zero exceptions. Not even for small jobs.
+
+Rep: VIP accounts - Vanderbilt University Medical Center, Saint Thomas Hospital, Marriott properties get priority transfer?
+
+Client: Yes. Add to that list - any Nashville Predators or Tennessee Titans facility. We just signed with their arena management company. Also add any caller who mentions they are from a government building or federal facility.
+
+Rep: Added. Client portal - direct callers to guardianhvac.com/portal?
+
+Client: Yes. And if they ask about emergency service history or invoices, tell them to email service at guardianhvac dot com.
+
+Rep: Noted. Any additional emergency trigger words or definitions?
+
+Client: Add compressor failure and refrigerant leak as immediate emergency triggers. Also if anyone says the temperature in the building is above 90 degrees or below 55 degrees that is an automatic emergency regardless of system status.
+
+Rep: Temperature thresholds noted - above 90 or below 55 triggers emergency protocol.
+
+Client: One more - we are rolling out a new preventive maintenance program next quarter. When that launches we will need Clara to ask callers if they are currently on a maintenance contract. Flag that as a future configuration update needed.
+
+Rep: Flagged in questions and unknowns for future update. Anything else?
+
+Client: I think that covers everything. This is much more thorough than I expected. I am impressed.
+
+Rep: Thank you David. Your configuration is now complete. You will receive your v2 agent spec within 24 hours.

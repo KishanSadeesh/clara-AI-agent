@@ -1,0 +1,38 @@
+Clara Onboarding Call - Account ACC004
+Company: Vertex Electrical Contractors
+
+Rep: Let us confirm your configuration for Clara. Starting with basics - Vertex Electrical Contractors, Phoenix Arizona?
+
+Client: Correct.
+
+Rep: Business hours Monday through Friday 6am to 5pm, America/Phoenix timezone, no daylight saving?
+
+Client: Yes that is exactly right. America/Phoenix. Very important that does not change with daylight saving.
+
+Rep: Confirmed. Emergency dispatcher at 602-555-0187, 45 second timeout, then on-call supervisor at 602-555-0211?
+
+Client: Yes. And actually update the supervisor number. It changed. New number is 602-555-0233. That is our new operations supervisor Rachel.
+
+Rep: Updated to 602-555-0233 for Rachel. If both fail?
+
+Client: Collect name, callback number, location, and nature of the issue. Then send a text alert to 602-555-0187 - actually that will not work with Clara. Just make sure the message Clara gives is strong. Say something like - Our emergency team has been notified and will contact you within 10 minutes. This is being escalated as a priority emergency.
+
+Rep: Good. Transfer fail message confirmed. No auto job creation in ServiceTrade or FieldEdge?
+
+Client: Correct. Absolutely nothing. I want to add one more rule - if the caller says the word arc flash or electrical fire those words should trigger the highest possible priority. Transfer immediately, no questions asked, just get name and number as fast as possible and transfer.
+
+Rep: Noted as critical trigger words. Hospital, data center, and airport callers always treated as priority?
+
+Client: Yes. Add semiconductor fabrication facility to that list. We just landed a big contract with a chip manufacturer and those facilities cannot have any electrical downtime.
+
+Rep: Added. Any changes to after hours non-emergency handling?
+
+Client: For non-emergencies after hours I want Clara to ask one additional question - Is this issue preventing you from operating your business right now? If they say yes, escalate to emergency even if the issue seemed minor.
+
+Rep: Smart rule. Adding that as an escalation check for non-emergencies.
+
+Client: One last thing - we have a large Spanish-speaking client base. Can Clara handle Spanish?
+
+Rep: We will flag that as a feature request and confirm capability. Adding to your questions and unknowns.
+
+Client: Great. I think that is everything.

@@ -1,0 +1,104 @@
+{
+  "name": "Clara - Pipeline A",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "aca48780-68fc-4ff8-9152-59490427b3c5",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.groq.com/openai/v1/chat/completions",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"model\": \"llama-3.3-70b-versatile\",\n  \"temperature\": 0,\n  \"max_tokens\": 2000,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Extract ONLY explicitly stated info from this transcript into JSON. NEVER invent data. Use null for missing fields. Output ONLY valid JSON no markdown.\\n\\nSchema:\\n{\\\"account_id\\\":\\\"ACC001\\\",\\\"company_name\\\":null,\\\"business_hours\\\":{\\\"days\\\":null,\\\"start\\\":null,\\\"end\\\":null,\\\"timezone\\\":null},\\\"office_address\\\":null,\\\"services_supported\\\":[],\\\"emergency_definition\\\":[],\\\"emergency_routing_rules\\\":{\\\"primary_contact\\\":null,\\\"contact_number\\\":null,\\\"fallback\\\":null},\\\"call_transfer_rules\\\":{\\\"timeout_seconds\\\":null,\\\"retries\\\":null,\\\"fail_message\\\":null},\\\"integration_constraints\\\":[],\\\"questions_or_unknowns\\\":[],\\\"notes\\\":null}\\n\\nTranscript:\\nProShield Fire Protection. Sprinkler installation fire alarm systems inspections in Dallas Texas. Office hours Monday through Friday 7am to 6pm Central. Emergencies are active sprinkler discharge or fire alarm going off. On-call technician number 214-555-0199. Non-emergencies take message call back next business day. Never auto-create sprinkler jobs in ServiceTrade.\"\n    }\n  ]\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        208,
+        0
+      ],
+      "id": "9f29b9e2-eb25-4adc-9c22-46375293c27c",
+      "name": "Extract ACC001 Demo Memo",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "yL9GRUOEiYCuGXTx",
+          "name": "Header Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.groq.com/openai/v1/chat/completions",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"model\": \"llama-3.3-70b-versatile\",\n  \"temperature\": 0,\n  \"max_tokens\": 3000,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"You are a Retell AI voice agent configuration generator for Clara Answers.\\n\\nGenerate a complete agent spec JSON based on this account memo:\\n\\nCompany: ProShield Fire Protection\\nBusiness Hours: Monday-Friday, 7am-6pm Central\\nEmergencies: active sprinkler discharge, fire alarm going off\\nOn-call number: 214-555-0199\\nIntegration: Never auto-create sprinkler jobs in ServiceTrade\\n\\nGenerate this exact JSON structure with a full system_prompt following these flows:\\n1. BUSINESS HOURS FLOW: greeting, ask purpose, collect name and number, transfer or route, fallback if transfer fails, ask if anything else, close\\n2. AFTER HOURS FLOW: greeting, ask purpose, confirm emergency, if emergency collect name+number+address immediately, attempt transfer, if transfer fails apologize and assure followup, if non-emergency collect details and confirm next business day followup, ask if anything else, close\\n\\nOutput ONLY valid JSON:\\n{\\\"agent_name\\\":null,\\\"version\\\":\\\"v1\\\",\\\"voice_style\\\":null,\\\"system_prompt\\\":null,\\\"key_variables\\\":{\\\"timezone\\\":null,\\\"business_hours\\\":null,\\\"emergency_routing\\\":null},\\\"call_transfer_protocol\\\":{\\\"timeout_seconds\\\":null,\\\"on_failure\\\":null},\\\"fallback_protocol\\\":null,\\\"integration_constraints\\\":[]}\"\n    }\n  ]\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        416,
+        0
+      ],
+      "id": "aaa35d6d-b562-4a96-93f7-129b46a7687a",
+      "name": "Generate ACC001 Agent Spec",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "yL9GRUOEiYCuGXTx",
+          "name": "Header Auth account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Extract ACC001 Demo Memo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract ACC001 Demo Memo": {
+      "main": [
+        [
+          {
+            "node": "Generate ACC001 Agent Spec",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "versionId": "5e802b16-9510-40a1-a7a2-7b8785bce724",
+  "meta": {
+    "instanceId": "3f56a0f63bf6360da25ec52c3b95e29e23a4fcb9785ec9b5b8ab66be49229981"
+  },
+  "id": "Y7Ju5THgUhIfGUqJVTnsb",
+  "tags": []
+}

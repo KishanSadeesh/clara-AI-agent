@@ -1,0 +1,39 @@
+Clara Demo Call - Account ACC003
+Date: Discovery Call
+Company: BlueSky Fire Protection LLC
+
+Sales Rep: Hi, thanks for taking the time today. Can you start by telling me a bit about BlueSky Fire Protection?
+
+Client: Sure. We are BlueSky Fire Protection based out of Houston, Texas. We have been in business for about 12 years. We primarily serve commercial clients - office buildings, warehouses, hospitals, and shopping centers. Our main services are sprinkler system installation and maintenance, fire alarm installation, kitchen hood suppression systems, and annual fire safety inspections.
+
+Sales Rep: That is a solid range of services. How many calls would you say you handle on a typical day?
+
+Client: On a busy day maybe 60 to 70 calls. Mondays are always the worst because we get everything that happened over the weekend. We have a front desk team of three people but they are completely overwhelmed. Calls go to voicemail constantly and we miss a lot of business because of it.
+
+Sales Rep: That is exactly the problem Clara is built to solve. What are your current business hours?
+
+Client: We are open Monday through Friday, 7am to 6pm Central time. We also have a technician on call Saturday mornings from 8am to noon but that is not a regular office day.
+
+Sales Rep: Got it. Now after hours - what happens when someone calls at 2am with an emergency?
+
+Client: Right now it is a mess honestly. We have an on-call technician rotation. The number is 713-555-0142. But sometimes the technician does not pick up and the caller just gives up. We lose emergency jobs that way.
+
+Sales Rep: Understood. What qualifies as an emergency in your business?
+
+Client: Active sprinkler head discharge - that is our biggest one. If a sprinkler is going off inside a building that is flooding and it needs to be shut off immediately. Fire alarm system going off and not resetting. Kitchen hood suppression system discharge. Any situation where there is active water damage from our systems or active fire risk. Those are true emergencies.
+
+Sales Rep: And non-emergencies after hours?
+
+Client: Scheduling inspections, questions about quotes, general service requests. Those can wait until the next business day. We just need someone to collect their info and assure them we will call back.
+
+Sales Rep: Do you use any job management software?
+
+Client: Yes we use ServiceTrade for everything. Job creation, scheduling, customer records. One thing that is really important to us - we never want sprinkler emergency jobs auto-created in ServiceTrade. Our operations manager has to review those manually because the billing is different and sometimes there are insurance implications. Regular inspection jobs and maintenance jobs can be auto-created no problem.
+
+Sales Rep: That is very helpful. Any other routing rules we should know about?
+
+Client: If it is a hospital calling after hours that is always top priority regardless of whether it is technically an emergency or not. Hospitals are our biggest clients and we treat them differently.
+
+Sales Rep: Great point. We will make note of that as something to confirm during onboarding.
+
+Client: Also we have a second on-call number for our senior technician Mike. His number is 713-555-0199. If the first on-call does not pick up after the first attempt we want to try Mike automatically.

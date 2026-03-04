@@ -1,0 +1,63 @@
+{
+  "account_id": "ACC005",
+  "company_name": "Guardian HVAC and Mechanical Services",
+  "business_hours": {
+    "days": "Monday through Friday",
+    "start": "7am",
+    "end": "5pm",
+    "timezone": "Central"
+  },
+  "office_address": "Nashville, Tennessee",
+  "services_supported": [
+    "commercial HVAC systems",
+    "chillers",
+    "rooftop units",
+    "boilers",
+    "cooling towers",
+    "mechanical work",
+    "plumbing",
+    "fire suppression"
+  ],
+  "emergency_definition": [
+    "HVAC failure in a hospital operating room or ICU",
+    "boiler failure in winter when building temperatures are dropping",
+    "complete chiller failure in summer causing building temperatures to rise above 85 degrees",
+    "any refrigerant leak",
+    "cooling tower failure at a data center",
+    "flooding from a burst pipe or mechanical failure",
+    "fire suppression system activation"
+  ],
+  "emergency_routing_rules": {
+    "primary_contact": "primary on-call",
+    "contact_number": "615-555-0133",
+    "order": [
+      "primary on-call",
+      "secondary on-call at 615-555-0144",
+      "operations manager at 615-555-0155"
+    ],
+    "fallback": null
+  },
+  "non_emergency_routing_rules": {
+    "destination": "service coordinator",
+    "method": "next business day"
+  },
+  "call_transfer_rules": {
+    "timeout_seconds": 30,
+    "retries": null,
+    "fail_message": null
+  },
+  "integration_constraints": [
+    "never create any job in ServiceTrade automatically without human review"
+  ],
+  "after_hours_flow_summary": null,
+  "office_hours_flow_summary": null,
+  "questions_or_unknowns": [
+    "specific handling for non-emergency calls during office hours",
+    "how to handle calls from non-premium accounts during office hours",
+    "Transfer retry logic not specified in demo."
+  ],
+  "notes": "premium accounts include Vanderbilt University Medical Center, Saint Thomas Hospital, and any Marriott property; client portal available at guardianhvac.com/portal",
+  "version": "v1",
+  "source": "demo_call",
+  "generated_at": "2026-03-04T16:00:07.439052Z"
+}

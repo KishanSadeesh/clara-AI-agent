@@ -1,0 +1,50 @@
+Clara Onboarding Call - Account ACC003
+Company: BlueSky Fire Protection LLC
+
+Rep: Welcome to onboarding. Let us go through and confirm all the details for your Clara configuration.
+
+Client: Sounds good. Let us get this set up properly.
+
+Rep: Confirming company name BlueSky Fire Protection LLC, based in Houston Texas?
+
+Client: Correct.
+
+Rep: Business hours Monday through Friday 7am to 6pm Central. Timezone America/Chicago?
+
+Client: Yes that is correct. America/Chicago.
+
+Rep: You mentioned Saturday morning coverage 8am to noon. How should Clara handle calls during that window?
+
+Client: Treat Saturday 8am to noon the same as business hours but only for emergencies. Non-emergencies during that window should still be treated as after hours - collect info and call back Monday.
+
+Rep: Got it. So Saturday 8am to noon - emergencies get transferred, non-emergencies get message taken.
+
+Client: Exactly.
+
+Rep: Primary emergency contact 713-555-0142, secondary is Mike at 713-555-0199. Transfer timeout before trying secondary?
+
+Client: Give the first number 40 seconds. If no answer then try Mike at 713-555-0199. Give Mike 40 seconds as well.
+
+Rep: If both fail what should Clara say?
+
+Client: Say this exactly - Our on-call team has been notified and will contact you within 15 minutes. If this is a life safety emergency please call 911 immediately.
+
+Rep: Perfect. ServiceTrade integration - never auto-create sprinkler emergency jobs, inspection and maintenance jobs are fine to auto-create?
+
+Client: Correct. And add this - never auto-create kitchen hood suppression jobs either. Those also need manual review.
+
+Rep: Noted. Hospital priority rule - any hospital caller gets top priority even for non-emergencies?
+
+Client: Yes. If the caller mentions they are calling from a hospital or medical facility, treat it as emergency priority regardless of the actual issue.
+
+Rep: Any changes to the emergency definitions?
+
+Client: Add one more - any call where the caller says the words water damage or flooding, even if they do not think it is an emergency, treat it as emergency and transfer immediately. Water damage from our systems gets very expensive very fast.
+
+Rep: Excellent. Any other constraints?
+
+Client: One more thing. We have a new account, Memorial Hermann Hospital system. If anyone calls identifying as Memorial Hermann, page me personally at 713-555-0300 in addition to the normal routing. They are our largest account.
+
+Rep: Noted as a special VIP routing rule. Transfer timeout confirmed at 40 seconds each attempt. Anything else?
+
+Client: That covers everything I think. Oh - make sure Clara never puts callers on hold. If something needs to happen it should happen while keeping the caller engaged.

@@ -1,0 +1,56 @@
+{
+  "account_id": "ACC003",
+  "company_name": "BlueSky Fire Protection LLC",
+  "business_hours": {
+    "days": "Monday through Friday",
+    "start": "7am",
+    "end": "6pm",
+    "timezone": "Central time"
+  },
+  "office_address": "Houston, Texas",
+  "services_supported": [
+    "sprinkler system installation and maintenance",
+    "fire alarm installation",
+    "kitchen hood suppression systems",
+    "annual fire safety inspections"
+  ],
+  "emergency_definition": [
+    "Active sprinkler head discharge",
+    "Fire alarm system going off and not resetting",
+    "Kitchen hood suppression system discharge",
+    "Active water damage from our systems or active fire risk"
+  ],
+  "emergency_routing_rules": {
+    "primary_contact": null,
+    "contact_number": "713-555-0142",
+    "order": [
+      "on-call technician",
+      "senior technician Mike (713-555-0199)"
+    ],
+    "fallback": null
+  },
+  "non_emergency_routing_rules": {
+    "destination": null,
+    "method": "collect info and assure callback"
+  },
+  "call_transfer_rules": {
+    "timeout_seconds": null,
+    "retries": null,
+    "fail_message": null
+  },
+  "integration_constraints": [
+    "no auto-creation of sprinkler emergency jobs in ServiceTrade"
+  ],
+  "after_hours_flow_summary": null,
+  "office_hours_flow_summary": null,
+  "questions_or_unknowns": [
+    "Transfer retry logic not specified in demo.",
+    "how to handle calls that go to voicemail during business hours",
+    "details on technician on-call rotation",
+    "Transfer timeout not specified in demo."
+  ],
+  "notes": "hospitals are top priority clients, treat them differently",
+  "version": "v1",
+  "source": "demo_call",
+  "generated_at": "2026-03-04T16:00:02.072650Z"
+}

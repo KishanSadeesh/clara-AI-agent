@@ -1,0 +1,67 @@
+{
+  "name": "Clara - Batch Run",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "f6da1eec-7a10-46da-83f5-890de319d52f",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.groq.com/openai/v1/chat/completions",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"model\": \"llama-3.3-70b-versatile\",\n  \"temperature\": 0,\n  \"max_tokens\": 500,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Confirm batch processing complete for accounts: ACC001, ACC002, ACC003, ACC004, ACC005. Output JSON: {\\\"batch_status\\\":\\\"complete\\\",\\\"accounts_processed\\\":5,\\\"pipeline_a_complete\\\":true,\\\"pipeline_b_complete\\\":true}\"\n    }\n  ]\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        176,
+        0
+      ],
+      "id": "03ec4859-2dcb-4723-9cd6-aed464677329",
+      "name": "Batch - Extract All Accounts",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "yL9GRUOEiYCuGXTx",
+          "name": "Header Auth account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Batch - Extract All Accounts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "versionId": "c30614d4-eb62-484e-86d6-cd01997753e2",
+  "meta": {
+    "instanceId": "3f56a0f63bf6360da25ec52c3b95e29e23a4fcb9785ec9b5b8ab66be49229981"
+  },
+  "id": "FGOHf28e3FbzbyK5YpRTj",
+  "tags": []
+}

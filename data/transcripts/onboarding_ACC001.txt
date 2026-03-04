@@ -1,0 +1,25 @@
+Clara Onboarding Call - Account ACC001 - ProShield Fire Protection
+
+Onboarding Rep: Let's finalize your configuration. Confirming business hours?
+
+Client: Monday through Friday, 7am to 6pm Central. Sometimes we do emergency Saturday calls but not regular hours.
+
+Onboarding Rep: Transfer timeout - how long before we give up trying to reach the on-call?
+
+Client: 45 seconds. If no answer after 45 seconds, leave a voicemail and text the backup number.
+
+Onboarding Rep: What's the backup number?
+
+Client: 214-555-0288, that's our operations manager Mike.
+
+Onboarding Rep: Any specific message if transfer fails?
+
+Client: Say something like "We were unable to reach our on-call technician. Your information has been logged and someone will call you within 15 minutes."
+
+Onboarding Rep: Confirming - no sprinkler jobs in ServiceTrade automatically?
+
+Client: Correct. Also, never create alarm inspection jobs automatically either. Only extinguisher recharge jobs can be auto-created.
+
+Onboarding Rep: Timezone confirmed as Central?
+
+Client: Yes, America/Chicago.

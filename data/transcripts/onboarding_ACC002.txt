@@ -1,0 +1,214 @@
+Speaker 1:
+Just give me a second. We'll let Ben in. Okay. I'll let him in. In 3, 2, 1. Ben is in. Hey Ben, good afternoon.
+
+Speaker 3:
+Oh hey. Hi, good afternoon.
+
+Speaker 1:
+Hey Ben, how are you?
+
+Speaker 3:
+I'm doing well. How are you?
+
+Speaker 1:
+Very well. Thank you for asking. We're really excited to kick things off for you. How have things been since the last time we spoke?
+
+Speaker 3:
+Good. Busy.
+
+Speaker 1:
+Busy is good.
+
+Speaker 3:
+Scrambling around for sure. I just signed the DocuSign.
+
+Speaker 1:
+Okay.
+
+Speaker 3:
+It looked like it said a 12-month term and I think we were talking about three months to start.
+
+Speaker 1:
+Correct. What it means is after the three months, if you decide to continue, the price will stay the same. That’s what the 12-month term refers to.
+
+Speaker 3:
+Perfect.
+
+Speaker 1:
+You've signed the DocuSign?
+
+Speaker 3:
+Yes.
+
+Speaker 1:
+Awesome. I also want to introduce someone new. That's Speaker 2. He helped build the Clara Answers system and will be your dedicated point of contact during onboarding.
+
+Speaker 3:
+Okay, sounds good.
+
+Speaker 1:
+I'll let Speaker 2 take over.
+
+Speaker 2:
+Thank you. I'm excited to get you started, Ben. We already have a base version of the AI agent configured using the context we gathered earlier. I just need to confirm a few details to finish configuration and make the agent available for testing today.
+
+After this call we'll share the phone number and dashboard so you can run test calls. Then we can schedule another meeting Friday to review the results and make any changes.
+
+Speaker 3:
+Okay.
+
+Speaker 2:
+First I want to understand how your calls work during office hours. Are you the only person answering incoming calls?
+
+Speaker 3:
+Yes, right now it's just me. Some contractors have direct numbers for my team in the field, but for new clients, small jobs, and service calls I'm the one answering.
+
+Speaker 2:
+Understood. When Clara is set up, your main business line will forward calls to Clara.
+
+Do you currently have a second phone number?
+
+Speaker 3:
+Yes. I have another phone I plan to use for personal calls. I just haven't activated it yet.
+
+Speaker 2:
+Perfect. Until that second number is active, we can configure call forwarding so that if you decline or miss a call, it forwards to Clara.
+
+Speaker 3:
+Can I turn Clara on and off when needed?
+
+Speaker 2:
+Yes. That is possible.
+
+Speaker 3:
+And if someone really needs to talk to me, Clara can transfer the call?
+
+Speaker 2:
+Yes. Once your second number is active we can transfer calls there.
+
+Speaker 3:
+Okay.
+
+Speaker 2:
+Now I want to confirm your service call pricing. Do you charge a visit fee for estimates?
+
+Speaker 3:
+Yes. We have a service call fee of $115 to come to the job site. After that we charge hourly in half-hour increments. The residential hourly rate is $98 per hour.
+
+Speaker 2:
+So that would be $49 per half hour?
+
+Speaker 3:
+Yes.
+
+Speaker 2:
+Does the $115 include any time?
+
+Speaker 3:
+No, that is just the call-out fee.
+
+Speaker 2:
+Understood. Do you want Clara to mention the service call fee automatically?
+
+Speaker 3:
+Usually customers should know about the fee before booking. But Clara can mention it only if they ask.
+
+Speaker 2:
+Okay, we'll configure it that way.
+
+Next, we will send notifications when calls come in. What email address should receive them?
+
+Speaker 3:
+Use info@benselectricsolutionsteam.com
+
+Speaker 2:
+Great. We'll also send SMS notifications to your main phone number.
+
+Speaker 3:
+Perfect.
+
+Speaker 2:
+Your phone will still receive text messages normally. Only incoming calls are forwarded.
+
+Speaker 3:
+Good.
+
+Speaker 2:
+Now let's talk about after-hours calls. Do you provide emergency services?
+
+Speaker 3:
+No, not generally. Only for a specific property manager that we work with.
+
+Speaker 2:
+If you give us that company’s details we can allow emergency calls from them to be transferred directly to you.
+
+Speaker 3:
+Okay. The company is G&M Pressure Washing. They manage gas stations like Chevron and Esso. Usually Shelley from that company contacts me if there’s an emergency.
+
+Speaker 2:
+Perfect. We'll configure Clara so that calls related to those properties can reach you.
+
+For all other callers after hours, Clara will inform them that someone will follow up the next business day.
+
+Speaker 3:
+Yes, that's fine.
+
+Speaker 2:
+Your business hours are Monday to Friday, around 8am to 4:30pm?
+
+Speaker 3:
+Yes, roughly 8:30 to 5.
+
+Speaker 2:
+Great. We'll start with that.
+
+The rest of the information we will pull from your website to train the AI agent.
+
+After this call I will send:
+- the agent phone number
+- dashboard login
+- instructions for testing
+
+You can call the number yourself and see how Clara responds.
+
+Speaker 3:
+Sounds good.
+
+Speaker 2:
+When should we meet again on Friday to review testing?
+
+Speaker 3:
+Noon doesn't work. I have a meeting then.
+
+Speaker 2:
+The meeting will only take about 15-20 minutes.
+
+Speaker 3:
+Okay. Let's do around 2pm.
+
+Speaker 2:
+Perfect. We'll schedule it for Friday at 2pm.
+
+Speaker 3:
+Great.
+
+Speaker 2:
+Once testing goes well we can make the system live and start forwarding calls from your main number to Clara.
+
+Speaker 3:
+That sounds great.
+
+Speaker 2:
+Watch for my email with the agent details and testing instructions.
+
+Speaker 3:
+Will do.
+
+Speaker 1:
+Thank you Ben. We'll see you on the next call.
+
+Speaker 3:
+Thanks everyone.
+
+Speaker 2:
+Thanks Ben.

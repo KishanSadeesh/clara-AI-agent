@@ -1,0 +1,39 @@
+Clara Demo Call - Account ACC004
+Date: Discovery Call
+Company: Vertex Electrical Contractors
+
+Sales Rep: Thanks for joining today. Tell me about Vertex Electrical.
+
+Client: Vertex Electrical Contractors. We are based in Phoenix, Arizona. We do commercial and industrial electrical work. Panel upgrades, switchgear installation, emergency electrical repairs, lighting retrofits, and we have a big division that handles electrical inspections for property management companies.
+
+Sales Rep: How big is your operation?
+
+Client: About 45 field technicians, 6 office staff. We run pretty lean. Our office gets probably 80 to 100 calls a day when you include all the property managers calling about their buildings.
+
+Sales Rep: That is high volume. What are your office hours?
+
+Client: Monday through Friday, 6am to 5pm Arizona time. Arizona does not observe daylight saving so we are on Mountain Standard Time year round. That trips up a lot of people. Make sure your system handles that correctly.
+
+Sales Rep: Noted - America/Phoenix timezone which does not change with daylight saving. After hours emergency handling?
+
+Client: We have a 24 hour emergency line. The dispatcher is at 602-555-0187. They handle all after hours calls and dispatch our on-call crews. So really Clara needs to identify if something is an emergency and transfer to that dispatch number. If the dispatcher does not answer within 45 seconds that is unusual and we need a fallback.
+
+Sales Rep: What is the fallback?
+
+Client: Try the on-call supervisor. That number is 602-555-0211. If that also fails then collect the caller information and send an alert. We cannot miss electrical emergencies - people can get hurt.
+
+Sales Rep: Understood. What qualifies as an electrical emergency?
+
+Client: Complete power outage to a commercial building or facility. Live exposed wiring accessible to people. Electrical burning smell or sparks with unknown source. Main panel failure. Generator failure at a hospital or data center. Basically anything where there is immediate risk of fire, injury, or critical system failure.
+
+Sales Rep: And non-emergencies?
+
+Client: Scheduling new work, getting quotes, inspection questions, reporting a flickering light or minor outlet issue. Those go to next business day.
+
+Sales Rep: Any software integration requirements?
+
+Client: We use ServiceTrade and we also use a separate system called FieldEdge for our inspection division. For electrical emergency jobs absolutely nothing gets auto-created anywhere. Our dispatcher handles all job creation manually for emergencies. For inspection scheduling requests Clara can collect the info but should not create anything - just log it for our office team.
+
+Sales Rep: Any other special rules?
+
+Client: If the caller mentions they are from a hospital, data center, or airport that automatically gets treated as priority emergency regardless of what the issue is. Those clients have SLA agreements with us and we respond within one hour guaranteed.

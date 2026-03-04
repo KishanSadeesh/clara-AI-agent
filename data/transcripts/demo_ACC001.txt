@@ -1,0 +1,30 @@
+Clara Demo Call - Account ACC001
+Company: ProShield Fire Protection
+
+Sales Rep: Hi, thanks for joining today. Can you tell me about your business?
+
+Client: Sure, we're ProShield Fire Protection. We do sprinkler installation, fire alarm systems, and annual inspections for commercial buildings here in Dallas, Texas.
+
+Sales Rep: What kind of call volume do you handle?
+
+Client: We get maybe 40-50 calls a day. Big problem is after-hours emergencies. If a sprinkler goes off at 2am, we need someone on the phone immediately.
+
+Sales Rep: What counts as an emergency for you?
+
+Client: Active sprinkler discharge, fire alarm going off, anything where a building might be on fire or flooding. Non-emergency would be scheduling inspections or general questions.
+
+Sales Rep: What are your office hours?
+
+Client: Monday through Friday, 7am to 6pm Central time.
+
+Sales Rep: And after hours - how do you want those emergencies routed?
+
+Client: We have an on-call technician. Their number is 214-555-0199.
+
+Sales Rep: What about non-emergencies after hours?
+
+Client: Just take a message and we'll call them back next business day.
+
+Sales Rep: Do you use any software for job management?
+
+Client: Yes, ServiceTrade. But we never want sprinkler jobs auto-created there - our ops team has to review those manually first.

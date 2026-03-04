@@ -1,0 +1,50 @@
+{
+  "account_id": "ACC001",
+  "company_name": "ProShield Fire Protection",
+  "business_hours": {
+    "days": "Monday through Friday",
+    "start": "7am",
+    "end": "6pm",
+    "timezone": "Central time"
+  },
+  "office_address": null,
+  "services_supported": [
+    "sprinkler installation",
+    "fire alarm systems",
+    "annual inspections"
+  ],
+  "emergency_definition": [
+    "Active sprinkler discharge",
+    "fire alarm going off",
+    "building on fire or flooding"
+  ],
+  "emergency_routing_rules": {
+    "primary_contact": "on-call technician",
+    "contact_number": "214-555-0199",
+    "order": [],
+    "fallback": null
+  },
+  "non_emergency_routing_rules": {
+    "destination": null,
+    "method": "take a message and call back next business day"
+  },
+  "call_transfer_rules": {
+    "timeout_seconds": null,
+    "retries": null,
+    "fail_message": null
+  },
+  "integration_constraints": [
+    "do not auto-create sprinkler jobs in ServiceTrade"
+  ],
+  "after_hours_flow_summary": null,
+  "office_hours_flow_summary": null,
+  "questions_or_unknowns": [
+    "Emergency escalation order not specified.",
+    "Transfer retry logic not specified in demo.",
+    "Transfer timeout not specified in demo."
+  ],
+  "notes": null,
+  "version": "v1",
+  "source": "demo_call",
+  "generated_at": "2026-03-04T15:59:57.922888Z"
+}

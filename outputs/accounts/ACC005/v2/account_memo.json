@@ -1,0 +1,59 @@
+{
+  "account_id": "ACC005",
+  "company_name": "Guardian HVAC and Mechanical Services",
+  "business_hours": {
+    "days": "Monday through Friday",
+    "start": "7am",
+    "end": "5pm",
+    "timezone": "America/Chicago"
+  },
+  "office_address": "Nashville Tennessee",
+  "services_supported": [
+    "commercial HVAC systems",
+    "chillers",
+    "rooftop units",
+    "boilers",
+    "cooling towers",
+    "mechanical work",
+    "plumbing",
+    "fire suppression"
+  ],
+  "emergency_definition": [
+    "compressor failure",
+    "refrigerant leak",
+    "temperature above 90 degrees",
+    "temperature below 55 degrees"
+  ],
+  "emergency_routing_rules": {
+    "primary_contact": "615-555-0133",
+    "contact_number": "615-555-0133",
+    "order": [
+      "615-555-0133",
+      "615-555-0144",
+      "615-555-0166"
+    ],
+    "fallback": null
+  },
+  "non_emergency_routing_rules": {
+    "destination": "guardianhvac.com/portal",
+    "method": "next business day"
+  },
+  "call_transfer_rules": {
+    "timeout_seconds": 30,
+    "retries": null,
+    "fail_message": "Our on-call engineering team has been notified. Someone will contact you within {10 minutes for hospital clients, 20 minutes for others}."
+  },
+  "integration_constraints": [
+    "no auto job creation in ServiceTrade"
+  ],
+  "after_hours_flow_summary": null,
+  "office_hours_flow_summary": null,
+  "questions_or_unknowns": [
+    "ask callers if they are currently on a maintenance contract when preventive maintenance program launches"
+  ],
+  "notes": "VIP accounts: Vanderbilt University Medical Center, Saint Thomas Hospital, Marriott properties, Nashville Predators or Tennessee Titans facility, government building or federal facility. Special date range exception: week between Christmas and New Year treated as after hours.",
+  "version": "v2",
+  "source": "onboarding_call",
+  "generated_at": "2026-03-04T16:00:07.439052Z",
+  "updated_at": "2026-03-04T16:00:16.011598Z"
+}

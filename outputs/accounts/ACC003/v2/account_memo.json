@@ -1,0 +1,61 @@
+{
+  "account_id": "ACC003",
+  "company_name": "BlueSky Fire Protection LLC",
+  "business_hours": {
+    "days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "start": "7:00 AM",
+    "end": "6:00 PM",
+    "timezone": "America/Chicago"
+  },
+  "office_address": "Houston, Texas",
+  "services_supported": [
+    "sprinkler emergency jobs",
+    "inspection and maintenance jobs"
+  ],
+  "emergency_definition": [
+    "water damage",
+    "flooding"
+  ],
+  "emergency_routing_rules": {
+    "primary_contact": "713-555-0142",
+    "contact_number": "713-555-0199",
+    "order": [
+      "primary",
+      "secondary"
+    ],
+    "fallback": "Our on-call team has been notified and will contact you within 15 minutes. If this is a life safety emergency please call 911 immediately."
+  },
+  "non_emergency_routing_rules": {
+    "destination": "message taken",
+    "method": "collect info and call back Monday"
+  },
+  "call_transfer_rules": {
+    "timeout_seconds": 40,
+    "retries": 2,
+    "fail_message": "Our on-call team has been notified and will contact you within 15 minutes. If this is a life safety emergency please call 911 immediately."
+  },
+  "integration_constraints": [
+    "never auto-create sprinkler emergency jobs",
+    "never auto-create kitchen hood suppression jobs"
+  ],
+  "after_hours_flow_summary": "collect info and call back Monday",
+  "office_hours_flow_summary": "transfer calls",
+  "questions_or_unknowns": [
+    "Transfer retry logic not specified in demo.",
+    "how to handle calls that go to voicemail during business hours",
+    "details on technician on-call rotation",
+    "Transfer timeout not specified in demo."
+  ],
+  "notes": "never put callers on hold, VIP routing rule for Memorial Hermann Hospital system",
+  "version": "v2",
+  "source": "onboarding_call",
+  "generated_at": "2026-03-04T16:00:02.072650Z",
+  "updated_at": "2026-03-04T16:00:12.721442Z"
+}

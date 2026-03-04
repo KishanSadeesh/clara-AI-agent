@@ -1,0 +1,219 @@
+Company name : Ben's Electric Solutions
+
+Speaker 1:
+All right, we'll let Ben in now in three, two, one. And he's in.
+
+Speaker 2:
+Hey Ben, can you hear me?
+
+Speaker 3:
+Wait, can you hear me? Yeah.
+
+Speaker 2:
+Yeah I can. Perfect.
+
+Speaker 1:
+Here we go. Ben, thank you so much for joining on such short notice. Before starting, I wanted to introduce myself again. I'm Nick and I am part of the Clara team. We reach out to businesses across North America and we've built AI agents for trade businesses specifically.
+
+To help us with that I have here my colleague who is the solutions expert and growth partner at Clara AI. He knows everything about the industry and the product. He will walk us through the presentation today.
+
+Over to you.
+
+Speaker 2:
+Thank you. Ben, good morning. How are you?
+
+Speaker 3:
+I'm doing very well. How are you?
+
+Speaker 2:
+Very well. I'm really excited about our conversation and glad we could do it earlier. I hope you’re not in a rush to hop off somewhere.
+
+Speaker 3:
+I'm always in a rush but we've got time.
+
+Speaker 2:
+Great. Let me start by introducing myself and our company and then I'd love to know more about you and your business.
+
+I work with the solutions team at Clara. My role is to speak with contractors, understand how they currently run their operations, and then identify where our solution can enhance their workflow.
+
+Clara started about three years ago because we saw AI being widely adopted in white-collar industries but not much in the trades industry. We began speaking with contractors and realized there were many opportunities where AI could help automate repetitive workflows.
+
+Before I continue, I'd love to learn about you. How long have you been in this business?
+
+Speaker 3:
+I've been working for myself for about eight years. I've been an electrician for 30 years and running my own business for the last eight.
+
+We're relatively small. I have a couple of guys and vans on the road and I do most of the admin and backend work myself.
+
+We're growing though. I'm bringing in someone as an operations manager to help with estimates and office work.
+
+Speaker 2:
+That's great. What CRM system do you currently use?
+
+Speaker 3:
+I use Jobber. It runs my CRM and it works really well.
+
+Speaker 2:
+And how many technicians do you currently have working in the field?
+
+Speaker 3:
+Right now I have two company vans and I'm adding a third one this week. I also have two subcontractors. So typically we operate about four vans on the road.
+
+Speaker 2:
+And these subcontractors help during busy periods?
+
+Speaker 3:
+Exactly. When things get busy I bring them in to handle overflow work.
+
+Speaker 2:
+Do you personally still go out into the field?
+
+Speaker 3:
+Sometimes. Mostly I help over the phone or go out for quotes and customer-facing jobs.
+
+Speaker 2:
+So you're the one managing the office, calls, scheduling and administration?
+
+Speaker 3:
+That's right.
+
+Speaker 2:
+And what type of work do you usually handle?
+
+Speaker 3:
+Everything. Service calls, small repairs, renovations, troubleshooting, EV chargers, hot tub hookups, panel changes, and sometimes larger projects like new homes or tenant improvements.
+
+Speaker 2:
+That’s a wide range of services.
+
+Speaker 3:
+Yes, but it's all electrical so the skills overlap.
+
+Speaker 2:
+Since you do service calls, I assume you receive calls throughout the day and sometimes after hours as well.
+
+Speaker 3:
+Most calls are during business hours but occasionally I get calls after hours or on weekends.
+
+We don't usually do emergency work unless it's for certain property managers we work with.
+
+Speaker 2:
+So you're essentially the one on call.
+
+Speaker 3:
+Yes.
+
+Speaker 2:
+Have you ever tried using a virtual receptionist or assistant before?
+
+Speaker 3:
+Yes, I tried a virtual assistant once. It was a real person that I paid for a certain number of hours per week. But it wasn't very effective and I didn't end up using the service much.
+
+Speaker 2:
+Understood. The reason I asked is because Clara offers something slightly different.
+
+Instead of a human assistant, we built an AI system that can answer calls automatically, understand the customer's request, and handle the conversation just like a receptionist.
+
+It can qualify the job, gather customer information, and even schedule appointments.
+
+Speaker 3:
+Interesting.
+
+Speaker 2:
+Let me show you a quick demo. I’ll display a phone number on your screen and you can call it as if you were a customer.
+
+Speaker 3:
+Okay.
+
+Speaker 2:
+Just call the number and speak naturally like a customer who has an electrical problem.
+
+Speaker 3:
+Alright.
+
+[Demo call simulation occurs]
+
+Speaker 3:
+Wow. That was actually pretty good. I was surprised at how well it worked.
+
+Speaker 2:
+What were your first impressions?
+
+Speaker 3:
+I liked it. It handled my questions well and even responded when I tried interrupting it.
+
+Speaker 2:
+Exactly. The system can handle multiple calls simultaneously, understand different types of service requests, and gather all the necessary information from the caller.
+
+After the call, it generates a summary with the caller’s details, the job request, and a transcript.
+
+Speaker 3:
+So what happens after the call?
+
+Speaker 2:
+You receive a summary through email or text. You can also access everything through a dashboard where you can see call history, transcripts, recordings, and potential leads.
+
+Speaker 3:
+Can I assign those leads to team members?
+
+Speaker 2:
+Yes. Initially you would assign them manually. Later we can automate assignment based on technician availability and job type.
+
+Speaker 3:
+That would be useful.
+
+Speaker 2:
+We also support integrations with several field service platforms. Jobber integration is currently in development.
+
+Speaker 3:
+That's good to hear.
+
+Speaker 2:
+We also have other AI agents that help with dispatching, appointment reminders, customer review requests, and invoice collections.
+
+Speaker 3:
+That's quite a lot.
+
+Speaker 2:
+Yes, but for now we're focusing on the answering agent.
+
+Speaker 3:
+Honestly it looks pretty useful. I could definitely see it answering most incoming calls.
+
+Speaker 2:
+Great. Let’s talk about pricing.
+
+Our starter plan is $249 per month which includes 500 minutes of call time.
+
+Speaker 3:
+Okay.
+
+Speaker 2:
+You could start with a three-month trial and evaluate how it performs for your business.
+
+Speaker 3:
+That sounds reasonable.
+
+Speaker 2:
+Great. The next step would be signing the agreement and scheduling an onboarding call where our team will configure the AI agent specifically for your business.
+
+Speaker 3:
+Sounds good.
+
+Speaker 2:
+I'll send you the contract and we'll schedule the kickoff call tomorrow.
+
+Speaker 3:
+Perfect.
+
+Speaker 2:
+Thank you for your time today.
+
+Speaker 3:
+Thanks as well.
+
+Speaker 2:
+Have a great day.
+
+Speaker 3:
+You too.

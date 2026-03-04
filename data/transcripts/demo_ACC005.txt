@@ -1,0 +1,34 @@
+Clara Demo Call - Account ACC005
+Company: Guardian HVAC and Mechanical Services
+
+Sales Rep: Good afternoon. Tell me about Guardian HVAC.
+
+Client: Guardian HVAC and Mechanical Services. We are in Nashville, Tennessee. We have been around for 18 years. We service commercial HVAC systems - chillers, rooftop units, boilers, cooling towers. We also do mechanical work like plumbing and fire suppression. Most of our clients are hospitals, hotels, universities, and large office complexes.
+
+Sales Rep: That is a complex mix of services. How do you handle your calls today?
+
+Client: Honestly not well. We have an answering service after hours but they are terrible. They read from a script, they cannot identify real emergencies, they give wrong information to clients. We have lost accounts because of poor after hours handling. We need something much smarter.
+
+Sales Rep: That is exactly what Clara is designed for. What are your office hours?
+
+Client: Monday through Friday, 7am to 5pm Central. We observe all federal holidays so those days should be treated as after hours.
+
+Sales Rep: Good to know. After hours emergency routing?
+
+Client: We have a tiered system. First call our primary on-call at 615-555-0133. If no answer within 30 seconds call our secondary on-call at 615-555-0144. If that also fails call our operations manager directly at 615-555-0155. We absolutely cannot miss calls especially from hospitals.
+
+Sales Rep: What counts as an emergency?
+
+Client: HVAC failure in a hospital operating room or ICU - that is our most critical. Boiler failure in winter when building temperatures are dropping. Complete chiller failure in summer causing building temperatures to rise above 85 degrees. Any refrigerant leak because those can be toxic. Cooling tower failure at a data center. Flooding from a burst pipe or mechanical failure. Fire suppression system activation.
+
+Sales Rep: Those are very specific and helpful. Non-emergencies?
+
+Client: Routine maintenance questions, scheduling, equipment not performing optimally but still running, thermostat issues, general inquiries. Next business day for all of those.
+
+Sales Rep: Software integrations?
+
+Client: We use ServiceTrade exclusively. Here is our policy - never create any job in ServiceTrade automatically without human review. Every single job needs to go through our service coordinator. Clara should collect the information and flag it but never create jobs. We had a bad experience with automation creating duplicate jobs and billing errors.
+
+Sales Rep: Noted. Any other special handling?
+
+Client: Yes. If a caller identifies themselves as calling from Vanderbilt University Medical Center, Saint Thomas Hospital, or any Marriott property those are our premium accounts. They should always be treated as priority and transferred immediately even if the issue sounds non-emergency. Also we have a client portal - if someone asks about the portal just tell them to go to guardianhvac.com slash portal.

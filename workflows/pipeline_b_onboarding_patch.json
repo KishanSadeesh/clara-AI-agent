@@ -1,0 +1,104 @@
+{
+  "name": "Clara - Pipeline B",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "1a031904-fc98-4cea-9e41-1a1049040b34",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.groq.com/openai/v1/chat/completions",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"model\": \"llama-3.3-70b-versatile\",\n  \"temperature\": 0,\n  \"max_tokens\": 2000,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"You are updating a Clara Answers agent config based on an onboarding call.\\n\\nExisting v1:\\n- Company: ProShield Fire Protection\\n- Hours: Monday-Friday 7am-6pm Central\\n- Emergency contact: 214-555-0199\\n- Integration constraint: Never auto-create sprinkler jobs in ServiceTrade\\n- Transfer timeout: unknown\\n- Backup contact: unknown\\n\\nOnboarding call confirmed:\\n- Transfer timeout: 45 seconds\\n- Backup number: 214-555-0288 (Mike, operations manager)\\n- Fail message: unable to reach on-call technician, someone will call within 15 minutes\\n- New constraint: never auto-create alarm inspection jobs either\\n- Only extinguisher recharge jobs can be auto-created\\n- Timezone: America/Chicago confirmed\\n\\nOutput ONLY valid JSON changelog:\\n{\\\"account_id\\\":\\\"ACC001\\\",\\\"version\\\":\\\"v1_to_v2\\\",\\\"updated_at\\\":\\\"2025-01-15\\\",\\\"changes\\\":[{\\\"field\\\":null,\\\"old_value\\\":null,\\\"new_value\\\":null,\\\"reason\\\":\\\"confirmed during onboarding call\\\"}]}\"\n    }\n  ]\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        208,
+        0
+      ],
+      "id": "5eaa2238-394b-43f9-bd0c-3e82489f3dc2",
+      "name": "Generate ACC001 Changelog",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "yL9GRUOEiYCuGXTx",
+          "name": "Header Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.groq.com/openai/v1/chat/completions",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"model\": \"llama-3.3-70b-versatile\",\n  \"temperature\": 0,\n  \"max_tokens\": 3000,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Generate updated Clara v2 agent spec JSON for ProShield Fire Protection with these confirmed details:\\n- Hours: Monday-Friday 7am-6pm America/Chicago\\n- Emergencies: active sprinkler discharge, fire alarm going off\\n- Primary on-call: 214-555-0199, timeout 45 seconds\\n- Backup: Mike at 214-555-0288\\n- Fail message: unable to reach on-call, someone calls within 15 minutes\\n- Never auto-create sprinkler jobs or alarm inspection jobs in ServiceTrade\\n- Only extinguisher recharge jobs can be auto-created\\n\\nInclude full business hours AND after-hours call flows in system_prompt.\\nOutput ONLY valid JSON:\\n{\\\"agent_name\\\":\\\"Clara - ProShield Fire Protection\\\",\\\"version\\\":\\\"v2\\\",\\\"voice_style\\\":\\\"professional, calm, empathetic\\\",\\\"system_prompt\\\":null,\\\"key_variables\\\":{\\\"timezone\\\":\\\"America/Chicago\\\",\\\"business_hours\\\":null,\\\"emergency_routing\\\":null},\\\"call_transfer_protocol\\\":{\\\"timeout_seconds\\\":45,\\\"backup_number\\\":\\\"214-555-0288\\\",\\\"on_failure\\\":null},\\\"integration_constraints\\\":[]}\"\n    }\n  ]\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        416,
+        0
+      ],
+      "id": "2dfff176-6fbc-4771-a799-558388284c57",
+      "name": "Generate ACC001 Agent Spec v2",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "yL9GRUOEiYCuGXTx",
+          "name": "Header Auth account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Generate ACC001 Changelog",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate ACC001 Changelog": {
+      "main": [
+        [
+          {
+            "node": "Generate ACC001 Agent Spec v2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "versionId": "3afc2af0-f840-411b-8578-4568562e576d",
+  "meta": {
+    "instanceId": "3f56a0f63bf6360da25ec52c3b95e29e23a4fcb9785ec9b5b8ab66be49229981"
+  },
+  "id": "h4bGc5MYDeacsnnes4CgK",
+  "tags": []
+}
